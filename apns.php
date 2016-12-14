@@ -74,7 +74,7 @@ class Apns
     public function connect()
     {
         if (empty($this->_nEnvironment) || empty($this->_sProviderCertificateFile)
-            || empty($this->_topic) || empty($this->_process)
+            || empty($this->_topic))
         ) {
             die("init check error");
         }
